@@ -1,6 +1,5 @@
 import { Terminal } from "@/components/terminal"
 import { ProjectTimeline } from "@/components/project-timeline"
-import { AlgorithmVisualizer } from "@/components/algorithm-visualizer"
 import { BlogPreview } from "@/components/blog-preview"
 import { ChallengeModal } from "@/components/challenge-modal"
 import { Footer } from "@/components/footer"
@@ -21,7 +20,7 @@ export default function Portfolio() {
               </h1>
               <p className="text-xl mb-6 text-zinc-300">Organic Software developer, problem solver, and perpetual learner.</p>
               <div className="flex space-x-4">
-                <button className="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors">
+                <button id="view-project-button" className="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors">
                   View Projects
                 </button>
                 <button className="px-6 py-2 border border-emerald-600 text-emerald-400 hover:bg-emerald-900/30 rounded-md transition-colors">
@@ -49,7 +48,6 @@ export default function Portfolio() {
             <span className="text-zinc-400">//</span> Interactive Demos
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <AlgorithmVisualizer />
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700">
               <h3 className="text-xl font-semibold mb-4">API Debugger</h3>
               <p className="text-zinc-400 mb-4">A tool I built to help visualize and debug API responses.</p>
