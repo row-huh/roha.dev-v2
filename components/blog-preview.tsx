@@ -55,6 +55,18 @@ export function BlogPreview() {
     },
     {
       id: 2,
+      title: "My First Hackathon Experience: From Nervous to 6th Place",
+      excerpt:
+        "How I went from being terrified of hackathons to placing 6th out of 57 teams at Bahria University Techathon.",
+      date: "2024-11-28",
+      readTime: "7 min read",
+      tags: ["Hackathons", "Experience", "Growth"],
+      slug: "first-hackathon-experience",
+      category: "professional" as keyof typeof categoryConfig,
+      mediumUrl: "https://medium.com/@roha.pathan125/first-hackathon-experience-def456",
+    },
+    {
+      id: 3,
       title: "Flask CORS Error: The 3-Hour Debugging Nightmare",
       excerpt:
         "How a simple CORS error turned into a 3-hour debugging session and what I learned about browser security.",

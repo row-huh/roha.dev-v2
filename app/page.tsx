@@ -18,10 +18,9 @@ export default function Home() {
               <span className="text-emerald-400">Roha</span>
               <span className="text-zinc-300"> Pathan</span>
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-400 mb-8">Backend & Data Engineering Student</p>
+            <p className="text-xl md:text-2xl text-zinc-400 mb-8">Organic Software Engineer xD</p>
             <p className="text-lg text-zinc-500 max-w-2xl mx-auto">
-              Hardworking and passionate job seeker with strong organizational skills eager to secure entry-level Data
-              Engineering or Backend Engineering internship position.
+              ykw i'll edit this later
             </p>
           </div>
 
