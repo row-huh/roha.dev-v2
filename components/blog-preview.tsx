@@ -9,7 +9,7 @@ export function BlogPreview() {
       readTime: "5 min read",
       tags: ["Hobbies", "Tech", "Gear"],
     },
-    {
+    { 
       id: 2,
       title: "My Favorite Sci-Fi Books of 2023",
       excerpt:
