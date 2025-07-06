@@ -12,14 +12,14 @@ export function Header() {
   const [isDownloading, setIsDownloading] = useState(false)
   const [downloadText, setDownloadText] = useState("Download Resume")
 
-  const downloadMessages = [
-    "Compressing life achievements...",
-    "Optimizing career highlights...",
-    "Formatting professional experiences...",
-    "Bundling skills and certifications...",
-    "Generating PDF masterpiece...",
-    "Almost there...",
-  ]
+const downloadMessages = [
+  "Polishing resume...",
+  "Packing skills...",
+  "Loading achievements...",
+  "god pls hire me 🙏",
+]
+
+
 
   const handleResumeDownload = async () => {
     setIsDownloading(true)
