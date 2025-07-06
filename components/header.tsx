@@ -24,7 +24,7 @@ export function Header() {
   const handleResumeDownload = async () => {
     setIsDownloading(true)
 
-    // Cycle through funny loading messages
+    // Cycle through loading messages
     for (let i = 0; i < downloadMessages.length; i++) {
       setDownloadText(downloadMessages[i])
       await new Promise((resolve) => setTimeout(resolve, 800))
@@ -32,7 +32,7 @@ export function Header() {
 
     // Simulate actual download
     const link = document.createElement("a")
-    link.href = "/resume.pdf" // You'll need to add your actual resume file
+    link.href = "/resume.pdf" // update this roha please
     link.download = "Roha_Pathan_Resume.pdf"
     document.body.appendChild(link)
     link.click()
@@ -43,12 +43,6 @@ export function Header() {
       setIsDownloading(false)
       setDownloadText("Download Resume")
     }, 2000)
-  }
-
-  const toggleTheme = () => {
-    setIsDark(!isDark)
-    // Add your theme switching logic here
-    document.documentElement.classList.toggle("light")
   }
 
   return (
@@ -71,15 +65,6 @@ export function Header() {
             Contact
           </Link>
 
-          {/* Theme Toggle */}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={toggleTheme}
-            className="text-zinc-300 hover:text-emerald-400 hover:bg-zinc-800"
-          >
-            {isDark ? <Sun size={18} /> : <Moon size={18} />}
-          </Button>
 
           {/* Resume Download Button */}
           <Button
@@ -103,15 +88,6 @@ export function Header() {
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center space-x-2">
-          {/* Theme Toggle Mobile */}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={toggleTheme}
-            className="text-zinc-300 hover:text-emerald-400 hover:bg-zinc-800"
-          >
-            {isDark ? <Sun size={18} /> : <Moon size={18} />}
-          </Button>
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
