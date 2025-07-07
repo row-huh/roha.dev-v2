@@ -106,10 +106,11 @@ export default function ContactPage() {
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">Quick Info</h3>
               <ul className="space-y-2 text-sm text-zinc-300">
-                <li>🎓 Software Engineering Student</li>
-                <li>💼 Seeking Backend/Data Engineering Internships</li>
-                <li>🚀 Available for immediate opportunities</li>
-                <li>⏰ Response time: Usually within 24 hours</li>
+                <li>🎓 Final-year Software Engineering student</li>
+                <li>🧠 Building cool stuff — mostly backend & data pipelines</li>
+                <li>💼 Open to teaming up on serious problems (or fun ones with graphs)</li>
+                <li>📬 Replies fast — unless debugging something cursed</li>
+
               </ul>
             </div>
           </div>
