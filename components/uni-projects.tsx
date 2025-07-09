@@ -16,7 +16,7 @@ const uniProjects = [
     semester: "Semester 4",
     grade: "A",
     timeSpent: "3 days",
-    painLevel: "High", // Low, Medium, High, Extreme
+    painLevel: "Extreme", // Low, Medium, High, Extreme
     actuallyLearned: ["Database design and normalization", "SQL query optimization", "Java GUI development with Swing"],
     painPoint: "Couldn't figure out how to connect to oracle - some issue to do with windows. Uninstalled windows, got popOS, get a virtual machine, installed oracle image on it then somehow running the oracle on vm plus running my code on the linux OS worked - i still don't know what i did there but I passed",
     links: {
@@ -32,30 +32,29 @@ const uniProjects = [
     course: "Software Construction & Development",
     semester: "Semester 6",
     grade: "A-",
-    timeSpent: "4 weeks",
+    timeSpent: "1 week",
     painLevel: "Low",
     actuallyLearned: [
       "PHP backend development",
       "Session management and authentication",
       "Responsive web design with Bootstrap",
     ],
-    painPOint: "None. Streamlit is so easy to use!",
+    painPoint: "None. Streamlit is so easy to use!",
     links: {
-      github: "#",
-      demo: "#",
+      github: "https://github.com/row-huh/Expense-Tracker",
     },
   },
   {
-    title: "Banking System Simulation",
+    title: "Relic",
     description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
     longDescription:
       "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
     technologies: ["C++", "OOP", "File Handling"],
-    course: "Object Oriented Programming",
-    semester: "Semester 2",
+    course: "Web Engineering",
+    semester: "Semester 6",
     grade: "A+",
-    timeSpent: "2 weeks",
-    painLevel: "Medium",
+    timeSpent: "4 days",
+    painLevel: "Low",
     actuallyLearned: [
       "Advanced OOP concepts in C++",
       "File handling and data persistence",
@@ -67,13 +66,13 @@ const uniProjects = [
     },
   },
   {
-    title: "Calculator with GUI",
+    title: "Operating System GUI",
     description: "Scientific calculator application built with Python Tkinter for Programming Fundamentals course.",
     longDescription:
       "Developed a fully functional scientific calculator with basic arithmetic operations, trigonometric functions, logarithms, and memory functions using Python's Tkinter library.",
     technologies: ["Python", "Tkinter", "Math Library"],
     course: "Programming Fundamentals",
-    semester: "Semester 1",
+    semester: "Semester 5",
     grade: "A",
     timeSpent: "1 week",
     painLevel: "Low",
@@ -88,47 +87,25 @@ const uniProjects = [
     },
   },
   {
-    title: "Data Structures Implementation",
-    description: "Implementation of various data structures and algorithms in C++ for Data Structures course.",
+    title: "Time Venturers",
+    description: "Text-Based RPG",
     longDescription:
       "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
     technologies: ["C++", "Algorithms", "Data Structures"],
-    course: "Data Structures & Algorithms",
-    semester: "Semester 3",
+    course: "Programming Fundamentals",
+    semester: "Semester 1",
     grade: "A",
-    timeSpent: "6 weeks",
-    painLevel: "Extreme",
+    timeSpent: "1 week",
+    painLevel: "None",
     actuallyLearned: [
-      "Implementation of core data structures",
-      "Algorithm complexity analysis",
-      "Memory management in C++",
+     
     ],
-    funnyMoment: "My binary tree was so unbalanced it looked like a linked list with trust issues 🌳",
+    funFact : "I had recently watch cyberpunk edgerunners, thus the theme of this game",
     links: {
       github: "#",
     },
   },
-  {
-    title: "Network Chat Application",
-    description: "Multi-client chat application using socket programming in Java for Computer Networks course.",
-    longDescription:
-      "Built a real-time chat application supporting multiple clients with features like private messaging, group chats, and file sharing. Implemented using Java socket programming and multithreading.",
-    technologies: ["Java", "Socket Programming", "Multithreading", "Networking"],
-    course: "Computer Networks",
-    semester: "Semester 5",
-    grade: "A-",
-    timeSpent: "3 weeks",
-    painLevel: "High",
-    actuallyLearned: [
-      "Socket programming and networking concepts",
-      "Multithreading in Java",
-      "Client-server architecture",
-    ],
-    funnyMoment: "Everyone's messages were appearing backwards. Turns out I was reading the buffer wrong 📱",
-    links: {
-      github: "#",
-    },
-  },
+
 ]
 
 const painLevelColors = {
