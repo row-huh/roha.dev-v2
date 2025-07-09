@@ -11,7 +11,7 @@ export function Certifications() {
         "Comprehensive course covering AI fundamentals, search algorithms, knowledge representation, machine learning, and neural networks.",
       skills: ["Python", "Machine Learning", "Neural Networks", "Search Algorithms", "AI Ethics"],
       link: "https://cs50.harvard.edu/certificates/aeb756b8-e607-46ab-b95b-d835bd352cbd",
-      projects: ["Minesweeper AI", "PageRank Algorithm", "Crossword Generator"],
+      projects: ["Minesweeper AI", "PageRank Algorithm", "Crossword Solver", "Tic-Tac-Toe AI", "Neural Networks"],
     },
     {
       id: 2,
