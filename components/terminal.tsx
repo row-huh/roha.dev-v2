@@ -10,8 +10,7 @@ export function Terminal() {
   const commands = [
     { command: "whoami", output: "roha_pathan" },
     { command: "pwd", output: "/home/roha/portfolio" },
-    { command: "ls -la skills/", output: "Python Java C Flask Django SQL Vertex-AI" },
-    { command: "cat education.txt", output: "UIT University - Software Engineering (Expected 2026)" },
+    { command: "ls -la skills/", output: "Python Java C Flask Django SQL AI/ML" },
     {
       command: "grep -r 'achievements' .",
       output:
