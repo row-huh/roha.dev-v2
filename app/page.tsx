@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Terminal } from "@/components/terminal"
 import { Certifications } from "@/components/certifications"
 import { Hackathons } from "@/components/hackathons"
+import { Projects } from "@/components/projects"
 import { ChallengeModal } from "@/components/challenge-modal"
 import { Footer } from "@/components/footer"
 
@@ -19,9 +20,7 @@ export default function Home() {
               <span className="text-zinc-300"> Pathan</span>
             </h1>
             <p className="text-xl md:text-2xl text-zinc-400 mb-8">Organic Software Engineer xD</p>
-            <p className="text-lg text-zinc-500 max-w-2xl mx-auto">
-              ykw i'll edit this later
-            </p>
+            <p className="text-lg text-zinc-500 max-w-2xl mx-auto">ykw i'll edit this later</p>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -30,8 +29,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-4 bg-zinc-800/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-emerald-400">Projects</span>
+            </h2>
+            <p className="text-zinc-400 text-lg">Things I've built and problems I've solved</p>
+          </div>
+          <Projects />
+        </div>
+      </section>
+
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-4 bg-zinc-800/50">
+      <section id="certifications" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -44,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* Hackathons Section */}
-      <section id="hackathons" className="py-20 px-4">
+      <section id="hackathons" className="py-20 px-4 bg-zinc-800/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

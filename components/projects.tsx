@@ -23,29 +23,7 @@ const projects = [
       "HR professional-focused UI/UX",
     ],
     links: {
-      github: "#",
-      demo: "#",
-    },
-  },
-  {
-    title: "Ampu-Fitness: Accessible Workout Assistant",
-    description:
-      "AI-powered fitness assistant delivering personalized, safe workout recommendations specifically designed for people with amputations.",
-    longDescription:
-      "Led backend development using Flask for an AI assistant that provides personalized, safe workout recommendations for amputees. Utilized MongoDB, Llama-index, and GPT-4 with RAG implementation and model performance evaluation using Trulens.",
-    technologies: ["Flask", "MongoDB", "GPT-4", "Llama-index", "RAG", "Trulens", "Python"],
-    category: "Healthcare AI",
-    status: "Completed",
-    timeline: "2024",
-    team: "Team Lead (Backend)",
-    highlights: [
-      "Specialized healthcare AI application",
-      "RAG implementation for accurate recommendations",
-      "Performance evaluation with Trulens",
-    ],
-    links: {
-      github: "#",
-      demo: "#",
+      github: "https://github.com/row-huh/Tecna-s-Tribe_Techathon",
     },
   },
   {
@@ -65,42 +43,31 @@ const projects = [
       "Hackathon recognition at Lokahi Healthcare",
     ],
     links: {
-      github: "#",
+      github: "https://github.com/row-huh/MalamaAI",
       demo: "https://lablab.ai/event/lokahi-innovation-in-healthcare/codeducklings/malamaai",
     },
   },
-  {
-    title: "E-commerce Platform",
+    {
+    title: "AfterSchool - Educational RAG",
     description:
-      "Full-stack e-commerce web application built with Django, demonstrating comprehensive backend development skills.",
+        "Full-stack educational platform powered by AI, focused on teaching essential life skills not usually covered in school—like personal finance, productivity, and more.",
     longDescription:
-      "Built a fully functional e-commerce web application using Django, showcasing strong backend development skills with features including user authentication, product management, shopping cart, and payment processing.",
-    technologies: ["Django", "Python", "PostgreSQL", "HTML/CSS", "JavaScript"],
+        "Built a full-stack AI-powered educational platform that helps users learn essential but often overlooked topics such as personal finance, critical thinking, and productivity. Integrated modern web technologies and retrieval-augmented generation (RAG) to deliver personalized, conversational learning experiences.",
+    technologies: ["React", "Node.js", "Flask", "AI/ML", "Vertex AI"],
     category: "Full-Stack",
     status: "Completed",
-    timeline: "2023",
-    team: "Solo Project",
-    highlights: ["Complete e-commerce functionality", "User authentication system", "Payment processing integration"],
+    timeline: "2024",
+    team: "AfterSchool Team",
+    highlights: [
+        "AI-driven personalized learning paths",
+        "RAG-based knowledge delivery",
+        "Clean and intuitive user experience",
+    ],
     links: {
-      github: "#",
+        github: "https://github.com/Laiba-lax/AfterSchool",
     },
-  },
-  {
-    title: "Discord Bot Collection",
-    description:
-      "Multiple custom Discord bots with engaging functionality, leveraging API integration and automation features.",
-    longDescription:
-      "Developed multiple custom Discord bots with various engaging functionalities including moderation tools, entertainment features, and API integrations. Demonstrates proficiency in bot development and API integration.",
-    technologies: ["Python", "Discord.py", "API Integration", "Automation"],
-    category: "Automation",
-    status: "Ongoing",
-    timeline: "2023-2024",
-    team: "Solo Projects",
-    highlights: ["Multiple bot implementations", "API integration expertise", "Community engagement features"],
-    links: {
-      github: "#",
-    },
-  },
+    }
+
 ]
 
 const categoryColors = {
