@@ -55,7 +55,7 @@ export default function Home() {
             </h2>
             <p className="text-zinc-400 text-lg">Things I've built and problems I've solved</p>
           </div>
-          <Uni Projects />
+          < UniProjects />
         </div>
       </section>
 
