@@ -18,7 +18,6 @@ const uniProjects = [
     timeSpent: "3 days",
     painLevel: "Extreme", // Low, Medium, High, Extreme
     actuallyLearned: ["Database design and normalization", "SQL query optimization", "Java GUI development with Swing"],
-    painPoint: "Couldn't figure out how to connect to oracle - some issue to do with windows. Uninstalled windows, got popOS, get a virtual machine, installed oracle image on it then somehow running the oracle on vm plus running my code on the linux OS worked - i still don't know what i did there but I passed",
     links: {
       github: "",
     },
@@ -39,7 +38,6 @@ const uniProjects = [
       "Session management and authentication",
       "Responsive web design with Bootstrap",
     ],
-    painPoint: "None. Streamlit is so easy to use!",
     links: {
       github: "https://github.com/row-huh/Expense-Tracker",
     },
@@ -60,7 +58,6 @@ const uniProjects = [
       "File handling and data persistence",
       "Memory management and pointers",
     ],
-    funnyMoment: "Tried to withdraw -$1000 and accidentally became a millionaire in the system 💰",
     links: {
       github: "#",
     },
@@ -81,7 +78,6 @@ const uniProjects = [
       "Event-driven programming",
       "Mathematical function implementation",
     ],
-    funnyMoment: "Calculator could solve complex equations but couldn't handle 0/0 without crashing 😅",
     links: {
       github: "#",
     },
@@ -184,11 +180,7 @@ export function UniProjects() {
               </ul>
             </div>
 
-            {/* Funny Moment */}
-            <div className="mb-4 p-3 bg-zinc-700/30 rounded-lg border border-zinc-600">
-              <h4 className="text-sm font-semibold text-yellow-400 mb-1">😅 Funny Moment</h4>
-              <p className="text-sm text-zinc-300 italic">"{project.funnyMoment}"</p>
-            </div>
+
 
             {/* Technologies */}
             <div className="mb-6">

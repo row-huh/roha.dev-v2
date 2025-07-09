@@ -3,6 +3,7 @@ import { Terminal } from "@/components/terminal"
 import { Certifications } from "@/components/certifications"
 import { Hackathons } from "@/components/hackathons"
 import { Projects } from "@/components/projects"
+import { UniProjects } from "@/components/uni-projects"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
             </h1>
             <p className="text-xl md:text-2xl text-zinc-400 mb-8">Organic Software Engineer</p>
             <p className="text-lg text-zinc-500 max-w-2xl mx-auto">
-            I can code, I solve problems, I got a habit of coding, I always learn new tech. 
+            I can code, I solve, I got a habit of coding, I always learn new tech. 
             70% of my time is watching tech videos, playing around with new tech, crying if I can't figure something out, then laughing like a maniac when I do figure it out.
             Hire me before I get too good at this, get into Y Combinator, and become a billionaire.
             </p>
@@ -44,6 +45,20 @@ export default function Home() {
           <Projects />
         </div>
       </section>
+
+      {/* Uni Projects Section */}
+        <section id="projects" className="py-20 px-4 bg-zinc-800/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-emerald-400">Projects</span>
+            </h2>
+            <p className="text-zinc-400 text-lg">Things I've built and problems I've solved</p>
+          </div>
+          <Uni Projects />
+        </div>
+      </section>
+
 
       {/* Certifications Section */}
       <section id="certifications" className="py-20 px-4">
