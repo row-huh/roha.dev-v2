@@ -3,7 +3,6 @@ import { Terminal } from "@/components/terminal"
 import { Certifications } from "@/components/certifications"
 import { Hackathons } from "@/components/hackathons"
 import { Projects } from "@/components/projects"
-import { ChallengeModal } from "@/components/challenge-modal"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -19,8 +18,13 @@ export default function Home() {
               <span className="text-emerald-400">Roha</span>
               <span className="text-zinc-300"> Pathan</span>
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-400 mb-8">Organic Software Engineer xD</p>
-            <p className="text-lg text-zinc-500 max-w-2xl mx-auto">ykw i'll edit this later</p>
+            <p className="text-xl md:text-2xl text-zinc-400 mb-8">Organic Software Engineer</p>
+            <p className="text-lg text-zinc-500 max-w-2xl mx-auto">
+            I can code, I can figure things out, I got a habit of coding, I always learn new tech.
+            Hire me before I get too good at this, get into Y Combinator, and become a billionaire.
+            Then I'm beyond your reach - act now or regret forever
+
+            </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -67,8 +71,6 @@ export default function Home() {
           <Hackathons />
         </div>
       </section>
-
-      <ChallengeModal />
       <Footer />
     </div>
   )
