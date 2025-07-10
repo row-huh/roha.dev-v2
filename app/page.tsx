@@ -5,6 +5,9 @@ import { Hackathons } from "@/components/hackathons"
 import { Projects } from "@/components/projects"
 import { UniProjects } from "@/components/uni-projects"
 import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+
 
 export default function Home() {
   return (
@@ -56,6 +59,28 @@ export default function Home() {
             <p className="text-zinc-400 text-lg">Things I've built and problems I've solved</p>
           </div>
           < UniProjects />
+        </div>
+      </section>
+
+
+     {/* Random Projects Teaser Section */}
+      <section className="py-16 px-4 bg-zinc-800/30">
+        <div className="container mx-auto text-center">
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-zinc-300">Still curious?</h3>
+            <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
+              There's some stuff I coded which either isn't resume worthy for being too satirical, didn't complete it or
+              not proud of it
+            </p>
+            <Link href="/random-projects">
+              <Button
+                size="lg"
+                className="bg-zinc-700 hover:bg-zinc-600 text-zinc-100 border border-zinc-600 hover:border-zinc-500 transition-all duration-300"
+              >
+                View My Chaotic Code Archive 🗂️
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
