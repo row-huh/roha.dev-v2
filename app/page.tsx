@@ -49,14 +49,41 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-emerald-400">Certifications</span>
+            </h2>
+            <p className="text-zinc-400 text-lg">Verified achievements and completed coursework</p>
+          </div>
+          <Certifications />
+        </div>
+      </section>
+
+      {/* Hackathons Section */}
+      <section id="hackathons" className="py-20 px-4 bg-zinc-800/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-emerald-400">Hackathons</span>
+            </h2>
+            <p className="text-zinc-400 text-lg">Competitive programming and innovation challenges</p>
+          </div>
+          <Hackathons />
+        </div>
+      </section>
+
       {/* Uni Projects Section */}
         <section id="projects" className="py-20 px-4 bg-zinc-800/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-emerald-400">Projects</span>
+              <span className="text-emerald-400">Uni Projects</span>
             </h2>
-            <p className="text-zinc-400 text-lg">Things I've built and problems I've solved</p>
+            <p className="text-zinc-400 text-lg">Stuff I built for uni. Didn't want to, but had no choice</p>
           </div>
           < UniProjects />
         </div>
@@ -85,31 +112,7 @@ export default function Home() {
       </section>
 
 
-      {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-emerald-400">Certifications</span>
-            </h2>
-            <p className="text-zinc-400 text-lg">Verified achievements and completed coursework</p>
-          </div>
-          <Certifications />
-        </div>
-      </section>
 
-      {/* Hackathons Section */}
-      <section id="hackathons" className="py-20 px-4 bg-zinc-800/50">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-emerald-400">Hackathons</span>
-            </h2>
-            <p className="text-zinc-400 text-lg">Competitive programming and innovation challenges</p>
-          </div>
-          <Hackathons />
-        </div>
-      </section>
       <Footer />
     </div>
   )
