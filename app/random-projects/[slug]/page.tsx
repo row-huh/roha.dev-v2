@@ -9,27 +9,17 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 
 const projectData = {
-  "discord-roast-bot": {
-    title: "Discord Bot That Roasts Your Code",
+  "pethia": {
+    title: "Discord Bot That Roasts All Of Your Friends (And You) - Private on github coz it knows too much about me",
     date: "2023-08-15",
     readTime: "3 min read",
-    status: "abandoned",
+    status: "completed",
     reason: "Too mean, hurt my own feelings",
     tags: ["Discord.py", "Python", "Regret"],
     githubUrl: "https://github.com/row-huh/pethia",
-    content: ''
-},
-
-  "accessibleUI": {
-    title: "Accessible UI",
-    date: "2023-06-10",
-    readTime: "5 min read",
-    status: "incomplete",
-    reason: "Couldn't figure out how to make it actually accessible",
-    tags: ["React", "Irony", "Self-Sabotage"],
-    githubUrl: "https://github.com/row-huh/accessible-ui",
-    content: '',
+    content: ``,
   },
+
 }
 
 const statusConfig = {
