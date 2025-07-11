@@ -67,13 +67,6 @@ export default function RandomProjectsPage() {
                 key={project.id}
                 className="bg-zinc-800 border-zinc-700 hover:border-zinc-600 transition-all duration-300"
               >
-                <div className="aspect-video bg-zinc-700 rounded-t-lg overflow-hidden">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-full object-cover opacity-50"
-                  />
-                </div>
 
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
