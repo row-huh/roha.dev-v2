@@ -20,29 +20,46 @@ const downloadMessages = [
 ]
 
 
-  const handleResumeDownload = async () => {
-    setIsDownloading(true)
+const handleResumeDownload = async () => {
+  setIsDownloading(true)
 
-    // Cycle through loading messages
-    for (let i = 0; i < downloadMessages.length; i++) {
-      setDownloadText(downloadMessages[i])
-      await new Promise((resolve) => setTimeout(resolve, 800))
-    }
+  // Cycle through loading messages
+  for (let i = 0; i < downloadMessages.length; i++) {
+    setDownloadText(downloadMessages[i])
+    await new Promise((resolve) => setTimeout(resolve, 800))
+  }
 
-    // Simulate actual download
+  try {
+    // Fetch the PDF and convert to Blob
+    const response = await fetch("/Roha_CV.pdf")
+    if (!response.ok) throw new Error("Failed to fetch the file")
+
+    const blob = await response.blob()
+    const url = URL.createObjectURL(blob)
+
+    // Create and trigger download link
     const link = document.createElement("a")
-    link.href = "/Roha_CV.pdf" // update this roha please
+    link.href = url
     link.download = "Roha_Pathan_Resume.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
 
+    URL.revokeObjectURL(url) // Clean up
+
     setDownloadText("Downloaded! 🎉")
-    setTimeout(() => {
-      setIsDownloading(false)
-      setDownloadText("Download Resume")
-    }, 2000)
+  } catch (error) {
+    console.error("Download failed:", error)
+    setDownloadText("Failed to download ❌")
   }
+
+  // Reset download state after a short delay
+  setTimeout(() => {
+    setIsDownloading(false)
+    setDownloadText("Download Resume")
+  }, 2000)
+}
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-900/95 backdrop-blur supports-[backdrop-filter]:bg-zinc-900/60">
