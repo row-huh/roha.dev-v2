@@ -3,7 +3,7 @@ import { Calendar, Users, ExternalLink, Award } from "lucide-react"
 export function Hackathons() {
   const hackathons = [
     {
-      id: 1,
+      id: 5,
       name: "Bahria University Techathon",
       placement: "6th place out of 57 teams",
       team: "Tecna's Tribe",
@@ -49,7 +49,7 @@ export function Hackathons() {
       certificateLink: "https://lablab.ai/u/@roha_pathan282/clwrzm2dz0006gdq2j4t4qwf8",
     },
     {
-      id: 5,
+      id: 1,
       name: "LabLabAI Langflow Hackathon",
       placement: "Participant",
       team: "RohaBeCoding",
