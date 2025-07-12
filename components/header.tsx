@@ -31,7 +31,7 @@ const downloadMessages = [
 
     // Simulate actual download
     const link = document.createElement("a")
-    link.href = "/resume.pdf" // update this roha please
+    link.href = "/Roha_CV.pdf" // update this roha please
     link.download = "Roha_Pathan_Resume.pdf"
     document.body.appendChild(link)
     link.click()
