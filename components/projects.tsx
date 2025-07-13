@@ -24,6 +24,7 @@ const projects = [
     ],
     links: {
       github: "https://github.com/row-huh/Tecna-s-Tribe_Techathon",
+      demo: "https://devpost.com/software/skinai-ufobl8"
     },
   },
   {
