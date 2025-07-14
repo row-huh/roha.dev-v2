@@ -27,7 +27,7 @@ const projects = [
       demo: "https://lablab.ai/event/lokahi-innovation-in-healthcare/codeducklings/malamaai",
     },
   },
-    {
+  {
     title: "AfterSchool - Educational RAG",
     description:
         "Full-stack educational platform powered by AI, focused on teaching essential life skills not usually covered in school—like personal finance, productivity, and more.",
@@ -47,8 +47,7 @@ const projects = [
         github: "https://github.com/Laiba-lax/AfterSchool",
     },
     },
-    
-
+ 
 ]
 
 const categoryColors = {

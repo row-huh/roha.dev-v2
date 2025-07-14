@@ -44,8 +44,8 @@ const categoryConfig = {
 
 // This would typically come from a CMS or markdown files
 const blogPosts = {
-  "why-backend-over-frontend": {
-    title: "Why I Chose Backend Development Over Frontend",
+  "how-computers-play-games": {
+    title: "How computers play games and why are they so good at it?",
     excerpt: "After trying both sides of web development, here's why I fell in love with servers, databases, and APIs.",
     date: "2024-12-15",
     readTime: "5 min read",
@@ -53,65 +53,125 @@ const blogPosts = {
     category: "professional" as keyof typeof categoryConfig,
     mediumUrl: "https://medium.com/@roha.pathan125/why-backend-over-frontend-abc123",
     content: `
-# Why I Chose Backend Development Over Frontend
+    
+# Minimax
 
-When I first started learning web development, like most beginners, I was drawn to frontend development. The immediate visual feedback, the ability to see your code come to life in the browser, and the satisfaction of creating beautiful user interfaces seemed incredibly appealing.
+Computers are pretty amazing at playing games, whether it’s a simple one like Tic-Tac-Toe or more challenging ones like Go or Chess. Behind the scenes, they use some really clever algorithms, with one of the main ones being minimax!
+Minimax
 
-But as I dove deeper into the world of programming, I found myself gravitating more and more toward the backend. Here's why.
+## Minimax is a popular algorithm used in games like Tic-Tac-Toe, Chess, Go, and many others. But before we get into the details, let’s break down what minimax is all about. It’s an algorithm that carefully explores all possible moves before making a decision. So, since I have the opportunity, let me tell you all about it!
 
-## The Logic Behind the Magic
 
-Frontend development is undoubtedly creative and visually rewarding, but I discovered that I'm more excited by the logic that powers applications rather than how they look. There's something deeply satisfying about designing database schemas, optimizing queries, and building robust APIs that can handle thousands of requests.
+## How Minimax works
 
-When I built my first REST API for a simple todo application, I was fascinated by how data flowed from the database through various layers of abstraction before reaching the user. That moment of understanding the complete data lifecycle was when I knew backend development was for me.
+To keep things clear, we’ll use Tic-Tac-Toe as our example, but remember, the same principles apply to any other game. Before we dive in, I’ll introduce some terminology to help you follow along and make the text sound a bit more engaging.
 
-## Problem-Solving at Scale
+**Agent** — This term generally refers to the AI that is playing the game.
 
-Backend development presents unique challenges that I find intellectually stimulating:
+**State** — A state is a snapshot of the game’s current configuration.
 
-- **Performance optimization**: How do you make a database query run in milliseconds instead of seconds?
-- **Scalability**: How do you design systems that can handle 10x or 100x more users?
-- **Data integrity**: How do you ensure data remains consistent across distributed systems?
+Minimax is an algorithm which is used in adversarial games: which are games in which you are playing against another player. Mortal Kombat is an adversarial game, while games such are Overcooked and Minecraft are not adversarial in nature.
 
-These aren't just technical challenges—they're puzzles that require creative thinking and deep understanding of computer science fundamentals.
+The main principle of minimax is representing states using numbers. That is, we assign numbers to three possible outcomes of the game, such as
+**1 = agent’s opponent winning**,
+**0 = the game ending in a draw**,
+**-1 = agent winning**
 
-## The Foundation of Everything
+These numerical values are referred to as ‘utility’. Now, which utility is best for the AI? It’s -1 (agent wins), which is also the lowest value. The agent aims for the lowest possible score because that means it’s winning or to ensure that the opponent isn’t winning. This role makes the AI a “minimizing player.” However, if you switch the roles, the AI becomes a “maximizing player” and aims to achieve a higher score. The principle remains the same.
 
-While frontend developers create the face of applications, backend developers build the foundation. Every button click, every form submission, every real-time update depends on robust backend systems. There's a certain pride in knowing that your code is the invisible force that makes everything else possible.
+For the sake of this explanation, let’s focus on the AI being a “minimizing player.” The main goal of the minimizing player isn’t just to achieve a -1 but to minimize the score as much as possible. So, the AI would prefer a score of 0 over 1, and if there’s an opportunity to get a -1, it would choose that over a 0.
+##Here’s the logic:
 
-## My Journey So Far
+    Base Case:
 
-During my time working on projects like MalamaAI (our healthcare hackathon project), I found myself naturally gravitating toward the backend tasks:
+        If the game is over in the current state:
 
-- Setting up the Flask server
-- Designing the database schema for patient data
-- Implementing the machine learning model integration
-- Creating secure API endpoints
+            Return the utility of the state.
 
-While my teammates focused on the React frontend, I was in my element working with Python, databases, and API design.
+    Maximizing Player’s Turn (isMaximizingPlayer = true):
 
-## The Learning Never Stops
+        Initialize maxEval to -infinity.
 
-Backend development keeps me constantly learning. New databases, frameworks, cloud services, and architectural patterns emerge regularly. The field is vast—from microservices to serverless computing, from SQL to NoSQL, from REST to GraphQL.
+        For each possible move in state:
 
-This constant evolution means I'm never bored, and there's always a new technology or concept to master.
+            Calculate eval as minimax(newState, depth + 1, false).
 
-## Looking Forward
+            Update maxEval to max(maxEval, eval).
 
-As I continue my journey in software engineering, I'm excited to dive deeper into:
+        Return maxEval.
 
-- **Distributed systems**: Understanding how large-scale applications work
-- **Cloud architecture**: Learning AWS, Docker, and Kubernetes
-- **Database optimization**: Mastering advanced SQL and NoSQL concepts
-- **System design**: Building scalable, maintainable architectures
+    Minimizing Player’s Turn (isMaximizingPlayer = false):
 
-## Final Thoughts
+        Initialize minEval to +infinity.
 
-Choosing backend development doesn't mean I ignore the frontend entirely. Understanding the full stack makes me a better developer. But when it comes to where I want to focus my career, the backend is where my passion lies.
+        For each possible move in state:
 
-If you're trying to decide between frontend and backend development, my advice is simple: try both, build projects in both areas, and see what excites you more. For me, the invisible magic of backend systems won out over the visible beauty of frontend interfaces.
+            Calculate eval as minimax(newState, depth + 1, true).
 
-And honestly? I couldn't be happier with that choice.
+            Update minEval to min(minEval, eval).
+
+        Return minEval.
+
+Function: findBestMove(state)
+
+Inputs:
+
+    state: The current game state.
+
+Output:
+
+    Returns the best move for the maximizing player (AI).
+
+Steps:
+
+    Initialize bestEval to -infinity.
+
+    Initialize bestMove to null.
+
+    For each possible move in state:
+    — Calculate eval as minimax(newState, 0, false).
+    — If eval > bestEval:
+    — Update bestEval to eval.
+    — Update bestMove to move.
+
+    Return bestMove.
+
+That’s the gist of Minimax, but here’s a big issue: Minimax checks out all possible game states before making a decision. It’s fine for simple games like Tic-Tac-Toe where there aren’t too many states to look at. But think about Chess — there are tons of possible states, so using regular Minimax just isn’t practical. That’s where Alpha-Beta pruning comes in. It’s a trick to speed things up by skipping some of the calculations. I know you might be thinking why alpha? why beta? Guess we need another crash course on more jargons!
+1. Alpha:
+
+The best value that the maximizing player currently can guarantee at that level or above.
+2. Beta:
+
+The best value that the minimizing player currently can guarantee at that level or above.
+Here’s how the pruning works:
+Maximizing Player (AI) Perspective:
+
+    Alpha starts at negative infinity.
+
+    When evaluating child nodes, if a node’s value is greater than Alpha, then Alpha is updated to this new value.
+
+    If Alpha becomes greater than or equal to Beta, there’s no need to evaluate further nodes in this branch, as the minimizing player will not choose this branch (because there’s a better option available).
+
+Minimizing Player (Opponent) Perspective:
+
+    Beta starts at positive infinity.
+
+    When evaluating child nodes, if a node’s value is less than Beta, then Beta is updated to this new value.
+
+    If Beta becomes less than or equal to Alpha, there’s no need to evaluate further nodes in this branch, as the maximizing player will not choose this branch (because there’s a better option available).
+
+Now, Consider the following;
+
+An example game tree
+Evaluating Node B:
+
+    The score from B is 3, which becomes the best score for the maximizing player.
+
+Evaluating Node C:
+
+    The score from C is 2, which becomes the best score for the minimizing player.
+
+Since the maximizing player’s best score (3) is already better than the minimizing player’s best score (2), there’s no need to evaluate Node C’s second child (score 6).
     `,
   },
 }

@@ -57,7 +57,7 @@ export default function BlogPage() {
   const blogPosts = [
     {
       id: 1,
-      title: "Why I Chose Backend Development Over Frontend",
+      title: "How Computers Play Games and Why Are They So Good at it",
       excerpt:
         "After trying both sides of web development, here's why I fell in love with servers, databases, and APIs.",
       date: "2024-12-15",
