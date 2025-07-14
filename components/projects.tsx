@@ -7,27 +7,6 @@ import { ExternalLink, Github, Calendar, Users, Award } from "lucide-react"
 
 const projects = [
   {
-    title: "Neutral: Bias Detection in Hiring",
-    description:
-      "Advanced machine learning tool to detect conscious and subconscious biases in hiring decisions using Gemini, LLaMA, and logistic regression models.",
-    longDescription:
-      "Developed comprehensive tools using advanced machine learning models to detect and mitigate hiring biases. Built a Streamlit-based application to present findings, enabling HR professionals to identify and address biases effectively.",
-    technologies: ["Python", "Streamlit", "Gemini AI", "LLaMA", "Logistic Regression", "Machine Learning"],
-    category: "AI/ML",
-    status: "Completed",
-    timeline: "2024",
-    team: "Solo Project",
-    highlights: [
-      "Advanced ML bias detection algorithms",
-      "Interactive Streamlit dashboard",
-      "HR professional-focused UI/UX",
-    ],
-    links: {
-      github: "https://github.com/row-huh/Tecna-s-Tribe_Techathon",
-      demo: "https://devpost.com/software/skinai-ufobl8"
-    },
-  },
-  {
     title: "MalamaAI: Skin Disease Detection",
     description:
       "Web application using Next.js and Flask to detect skin diseases with DinoV2-based model and Llama 3.370b for accurate analysis.",
@@ -67,7 +46,8 @@ const projects = [
     links: {
         github: "https://github.com/Laiba-lax/AfterSchool",
     },
-    }
+    },
+    
 
 ]
 
