@@ -60,31 +60,32 @@ const projects = [
   highlights: [
     "Database design and normalization",
     "SQL query optimization",
-    "Java GUI development with Swing",
+    "Flask backend integration",
   ],
   links: {
     github: "https://github.com/row-huh/Nutritional-Management-System",
   },
 },
 
-  {
-    title: "Expense Tracker",
-    description: "Web-based student management system using PHP and MySQL for Web Development course.",
-    longDescription:
-      "Developed a complete student information system with student registration, course enrollment, grade management, and reporting features. Implemented user authentication and role-based access control.",
-    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    status: "Completed",
-    timeline: "Semester 6",
-    team: "Solo",
-    highlights: [
-      "PHP backend development",
-      "Session management and authentication",
-      "Responsive web design with Bootstrap",
-    ],
-    links: {
-      github: "https://github.com/row-huh/Expense-Tracker",
-    },
+{
+  title: "Expense Tracker",
+  description: "Web-based expense tracking system using Streamlit for university.",
+  longDescription:
+    "Developed an expense tracker that allows users to upload receipts, auto-extract key details using Tesseract OCR, categorize transactions, and visualize their spending with interactive charts. Emphasized simplicity and real-time insights using Streamlit.",
+  technologies: ["Streamlit", "TesseractOCR", "Python", "JavaScript"],
+  status: "Completed",
+  timeline: "Semester 6",
+  team: "Solo",
+  highlights: [
+    "OCR-based receipt scanning",
+    "financial visualizations",
+    "Streamlit-based dashboard"
+  ],
+  links: {
+    github: "https://github.com/row-huh/Expense-Tracker",
   },
+},
+
   {
     title: "Relic",
     description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
