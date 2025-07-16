@@ -54,7 +54,6 @@ const projects = [
     longDescription:
       "Built a full-featured library management system with book cataloging, member management, borrowing/returning functionality, and fine calculation. Implemented proper database normalization and CRUD operations.",
     technologies: ["Python", "MySQL", "Flask", "Javascript"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 4",
     team: "Solo",
@@ -73,7 +72,6 @@ const projects = [
     longDescription:
       "Developed a complete student information system with student registration, course enrollment, grade management, and reporting features. Implemented user authentication and role-based access control.",
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 6",
     team: "Solo",
@@ -92,7 +90,6 @@ const projects = [
     longDescription:
       "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
     technologies: ["C++", "OOP", "File Handling"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 6",
     team: "Solo",
@@ -111,7 +108,6 @@ const projects = [
     longDescription:
       "Developed a fully functional scientific calculator with basic arithmetic operations, trigonometric functions, logarithms, and memory functions using Python's Tkinter library.",
     technologies: ["Python", "Tkinter", "Math Library"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 5",
     team: "Solo",
@@ -130,7 +126,6 @@ const projects = [
     longDescription:
       "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
     technologies: ["C++", "Algorithms", "Data Structures"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 1",
     team: "Solo",
@@ -149,7 +144,6 @@ const categoryColors = {
   "Healthcare AI": "bg-blue-900/20 text-blue-300 border-blue-700",
   "Full-Stack": "bg-emerald-900/20 text-emerald-300 border-emerald-700",
   Automation: "bg-orange-900/20 text-orange-300 border-orange-700",
-  "University Project": "bg-zinc-700/20 text-zinc-300 border-zinc-600",
 }
 
 export function Projects() {
@@ -171,9 +165,11 @@ export function Projects() {
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className={categoryColors[project.category as keyof typeof categoryColors]}>
-                {project.category}
-              </Badge>
+              {project.category && categoryColors[project.category as keyof typeof categoryColors] && (
+                <Badge className={categoryColors[project.category as keyof typeof categoryColors]}>
+                  {project.category}
+                </Badge>
+              )}
               <Badge variant="outline" className="border-zinc-600 text-zinc-300">
                 {project.status}
               </Badge>
