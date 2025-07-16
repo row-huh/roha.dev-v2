@@ -45,54 +45,53 @@ const projects = [
     ],
     links: {
       github: "https://github.com/Laiba-lax/AfterSchool",
+      demo: "https://devpost.com/software/skinai-ufobl8"
     },
   },
-  // University Projects
-  {
-    title: "Nutritional Management System",
-    description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
-    longDescription:
-      "Built a full-featured library management system with book cataloging, member management, borrowing/returning functionality, and fine calculation. Implemented proper database normalization and CRUD operations.",
-    technologies: ["Python", "MySQL", "Flask", "Javascript"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 4",
-    team: "Solo",
-    highlights: [
-      "Database design and normalization",
-      "SQL query optimization",
-      "Java GUI development with Swing",
-    ],
-    links: {
-      github: "",
-    },
+
+{
+  title: "Nutritional Management System",
+  description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
+  longDescription:
+    "Developed a complete nutritional management platform for hospitals and clinics. It includes patient profiling, diet chart generation, nutrition tracking, and admin dashboards. Implemented secure authentication, optimized database schemas, and emphasized usability for medical professionals.",
+  technologies: ["Python", "MySQL", "Flask", "Javascript"],
+  status: "Completed",
+  timeline: "2024",
+  highlights: [
+    "Database design and normalization",
+    "SQL query optimization",
+    "Flask backend integration",
+  ],
+  links: {
+    github: "https://github.com/row-huh/Nutritional-Management-System",
   },
-  {
-    title: "Expense Tracker",
-    description: "Web-based student management system using PHP and MySQL for Web Development course.",
-    longDescription:
-      "Developed a complete student information system with student registration, course enrollment, grade management, and reporting features. Implemented user authentication and role-based access control.",
-    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 6",
-    team: "Solo",
-    highlights: [
-      "PHP backend development",
-      "Session management and authentication",
-      "Responsive web design with Bootstrap",
-    ],
-    links: {
-      github: "https://github.com/row-huh/Expense-Tracker",
-    },
+},
+
+{
+  title: "Expense Tracker",
+  description: "Web-based expense tracking system using Streamlit for university.",
+  longDescription:
+    "Developed an expense tracker that allows users to upload receipts, auto-extract key details using Tesseract OCR, categorize transactions, and visualize their spending with interactive charts. Emphasized simplicity and real-time insights using Streamlit.",
+  technologies: ["Streamlit", "TesseractOCR", "Python", "JavaScript"],
+  status: "Completed",
+  timeline: "Semester 6",
+  team: "Solo",
+  highlights: [
+    "OCR-based receipt scanning",
+    "financial visualizations",
+    "Streamlit-based dashboard"
+  ],
+  links: {
+    github: "https://github.com/row-huh/Expense-Tracker",
   },
+},
+
   {
     title: "Relic",
     description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
     longDescription:
       "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
     technologies: ["C++", "OOP", "File Handling"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 6",
     team: "Solo",
@@ -111,7 +110,6 @@ const projects = [
     longDescription:
       "Developed a fully functional scientific calculator with basic arithmetic operations, trigonometric functions, logarithms, and memory functions using Python's Tkinter library.",
     technologies: ["Python", "Tkinter", "Math Library"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 5",
     team: "Solo",
@@ -130,7 +128,6 @@ const projects = [
     longDescription:
       "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
     technologies: ["C++", "Algorithms", "Data Structures"],
-    category: "University Project",
     status: "Completed",
     timeline: "Semester 1",
     team: "Solo",
@@ -149,7 +146,6 @@ const categoryColors = {
   "Healthcare AI": "bg-blue-900/20 text-blue-300 border-blue-700",
   "Full-Stack": "bg-emerald-900/20 text-emerald-300 border-emerald-700",
   Automation: "bg-orange-900/20 text-orange-300 border-orange-700",
-  "University Project": "bg-zinc-700/20 text-zinc-300 border-zinc-600",
 }
 
 export function Projects() {
@@ -171,9 +167,11 @@ export function Projects() {
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className={categoryColors[project.category as keyof typeof categoryColors]}>
-                {project.category}
-              </Badge>
+              {project.category && categoryColors[project.category as keyof typeof categoryColors] && (
+                <Badge className={categoryColors[project.category as keyof typeof categoryColors]}>
+                  {project.category}
+                </Badge>
+              )}
               <Badge variant="outline" className="border-zinc-600 text-zinc-300">
                 {project.status}
               </Badge>

@@ -3,7 +3,6 @@ import { Terminal } from "@/components/terminal"
 import { Certifications } from "@/components/certifications"
 import { Hackathons } from "@/components/hackathons"
 import { Projects } from "@/components/projects"
-import { UniProjects } from "@/components/uni-projects"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -73,19 +72,6 @@ export default function Home() {
             <p className="text-zinc-400 text-lg">Competitive programming and innovation challenges</p>
           </div>
           <Hackathons />
-        </div>
-      </section>
-
-      {/* Uni Projects Section */}
-        <section id="projects" className="py-20 px-4 bg-zinc-800/50">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-emerald-400">Uni Projects</span>
-            </h2>
-            <p className="text-zinc-400 text-lg">Stuff I built for uni. Didn't want to, but had no choice</p>
-          </div>
-          < UniProjects />
         </div>
       </section>
 
