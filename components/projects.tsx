@@ -49,24 +49,24 @@ const projects = [
     },
   },
 
-  {
-    title: "Nutritional Management System",
-    description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
-    longDescription:
-      "Built a full-featured library management system with book cataloging, member management, borrowing/returning functionality, and fine calculation. Implemented proper database normalization and CRUD operations.",
-    technologies: ["Python", "MySQL", "Flask", "Javascript"],
-    status: "Completed",
-    timeline: "Semester 4",
-    team: "Solo",
-    highlights: [
-      "Database design and normalization",
-      "SQL query optimization",
-      "Java GUI development with Swing",
-    ],
-    links: {
-      github: "https://github.com/row-huh/Nutritional-Management-System",
-    },
+{
+  title: "Nutritional Management System",
+  description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
+  longDescription:
+    "Developed a complete nutritional management platform for hospitals and clinics. It includes patient profiling, diet chart generation, nutrition tracking, and admin dashboards. Implemented secure authentication, optimized database schemas, and emphasized usability for medical professionals.",
+  technologies: ["Python", "MySQL", "Flask", "Javascript"],
+  status: "Completed",
+  timeline: "2024",
+  highlights: [
+    "Database design and normalization",
+    "SQL query optimization",
+    "Java GUI development with Swing",
+  ],
+  links: {
+    github: "https://github.com/row-huh/Nutritional-Management-System",
   },
+},
+
   {
     title: "Expense Tracker",
     description: "Web-based student management system using PHP and MySQL for Web Development course.",
