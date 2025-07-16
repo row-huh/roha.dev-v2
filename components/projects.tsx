@@ -45,9 +45,10 @@ const projects = [
     ],
     links: {
       github: "https://github.com/Laiba-lax/AfterSchool",
+      demo: "https://devpost.com/software/skinai-ufobl8"
     },
   },
-  // University Projects
+
   {
     title: "Nutritional Management System",
     description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
@@ -63,7 +64,7 @@ const projects = [
       "Java GUI development with Swing",
     ],
     links: {
-      github: "",
+      github: "https://github.com/row-huh/Nutritional-Management-System",
     },
   },
   {
