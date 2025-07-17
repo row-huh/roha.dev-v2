@@ -53,7 +53,7 @@ const projects = [
   title: "Nutritional Management System",
   description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
   longDescription:
-    "Developed a complete nutritional management platform for hospitals and clinics. It includes patient profiling, diet chart generation, nutrition tracking, and admin dashboards. Implemented secure authentication, optimized database schemas, and emphasized usability for medical professionals.",
+    "Developed a complete nutritional management platform for end users and nutritionists. It includes patient profiling, diet chart generation, nutrition tracking, and admin dashboards.",
   technologies: ["Python", "MySQL", "Flask", "Javascript"],
   status: "Completed",
   timeline: "2024",
@@ -88,13 +88,11 @@ const projects = [
 
   {
     title: "Relic",
-    description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
+    description: "A webapp that lets you search through an historical archive of news artcickes",
     longDescription:
       "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
-    technologies: ["C++", "OOP", "File Handling"],
+    technologies: ["PHP", "MySQL", "JavaScript"],
     status: "Completed",
-    timeline: "Semester 6",
-    team: "Solo",
     highlights: [
       "Advanced OOP concepts in C++",
       "File handling and data persistence",
