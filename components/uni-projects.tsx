@@ -83,7 +83,7 @@ const uniProjects = [
   description: "A futuristic text-based role-playing game built in C++.",
   longDescription:
     "Time Venturers is a console-based RPG set in the year 2094. Players must uncover who summoned them to the future and why, while exploring a mysterious cyber-themed world. The game implements core programming concepts like conditional logic, loops, functions, and basic data structures to manage gameplay elements and decision branching.",
-  technologies: ["C++", "OOP", "Console I/O"],
+  technologies: ["Python", "Console I/O"],
   timeSpent: "1 week",
   painLevel: "None",
   actuallyLearned: [
@@ -119,24 +119,9 @@ export function UniProjects() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className="bg-blue-900/20 text-blue-300 border-blue-700">
-                <BookOpen size={12} className="mr-1" />
-                {project.course}
-              </Badge>
-              <Badge className={painLevelColors[project.painLevel as keyof typeof painLevelColors]}>
-                {painLevelIcons[project.painLevel as keyof typeof painLevelIcons]} {project.painLevel} Pain
-              </Badge>
-              <Badge variant="outline" className="border-zinc-600 text-zinc-300">
-                Grade: {project.grade}
-              </Badge>
-            </div>
+
 
             <div className="flex flex-wrap gap-4 text-sm text-zinc-400 mb-4">
-              <div className="flex items-center">
-                <Calendar size={14} className="mr-1" />
-                {project.semester}
-              </div>
               <div className="flex items-center">
                 <Coffee size={14} className="mr-1" />
                 {project.timeSpent}
