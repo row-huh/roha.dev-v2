@@ -601,6 +601,9 @@ video {
 .left-2 {
   left: 0.5rem;
 }
+.left-3 {
+  left: 0.75rem;
+}
 .left-\[50\%\] {
   left: 50%;
 }
@@ -727,9 +730,6 @@ video {
 }
 .ml-1 {
   margin-left: 0.25rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -1017,6 +1017,9 @@ video {
 .max-w-max {
   max-width: max-content;
 }
+.max-w-md {
+  max-width: 28rem;
+}
 .max-w-none {
   max-width: none;
 }
@@ -1165,6 +1168,9 @@ video {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -1620,6 +1626,9 @@ video {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pl-10 {
+  padding-left: 2.5rem;
+}
 .pl-2\.5 {
   padding-left: 0.625rem;
 }
@@ -1839,6 +1848,10 @@ video {
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+.placeholder-zinc-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-placeholder-opacity, 1));
 }
 .accent-foreground {
   accent-color: hsl(var(--foreground));
@@ -2201,10 +2214,6 @@ code {
   border-color: rgb(82 82 91 / var(--tw-border-opacity, 1));
 }
 
-.hover\:border-opacity-80:hover {
-  --tw-border-opacity: 0.8;
-}
-
 .hover\:bg-accent:hover {
   background-color: hsl(var(--accent));
 }
@@ -2220,10 +2229,6 @@ code {
 .hover\:bg-emerald-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(4 120 87 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-emerald-900\/20:hover {
-  background-color: rgb(6 78 59 / 0.2);
 }
 
 .hover\:bg-muted:hover {
@@ -2314,10 +2319,6 @@ code {
 
 .hover\:opacity-100:hover {
   opacity: 1;
-}
-
-.hover\:opacity-80:hover {
-  opacity: 0.8;
 }
 
 .hover\:shadow-\[0_0_0_1px_hsl\(var\(--sidebar-accent\)\)\]:hover {
@@ -2436,11 +2437,6 @@ code {
   opacity: 1;
 }
 
-.group:hover .group-hover\:translate-x-1 {
-  --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group:hover .group-hover\:scale-110 {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -2452,16 +2448,16 @@ code {
   color: rgb(110 231 183 / var(--tw-text-opacity, 1));
 }
 
+.group:hover .group-hover\:text-opacity-80 {
+  --tw-text-opacity: 0.8;
+}
+
 .group\/menu-item:hover .group-hover\/menu-item\:opacity-100 {
   opacity: 1;
 }
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
-}
-
-.group:hover .group-hover\:opacity-80 {
-  opacity: 0.8;
 }
 
 .group.destructive .group-\[\.destructive\]\:border-muted\/40 {
@@ -3290,14 +3286,6 @@ code {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-center {
-    align-items: center;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
   }
 
   .md\:text-2xl {

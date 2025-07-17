@@ -1,3 +1,5 @@
+'use server'
+
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
@@ -131,7 +133,7 @@ export function getBlogPost(slug: string): BlogPost | null {
   }
 }
 
-export function getBlogPostsByCategory(category: string): BlogPost[] {
+export async function getBlogPostsByCategory(category: string): BlogPost[] {
   const allPosts = getAllBlogPosts()
   return allPosts.filter((post) => post.category === category)
 }
