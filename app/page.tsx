@@ -3,9 +3,9 @@ import { Terminal } from "@/components/terminal"
 import { Certifications } from "@/components/certifications"
 import { Hackathons } from "@/components/hackathons"
 import { Projects } from "@/components/projects"
-import { UniProjects } from "@/components/uni-projects"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { UniProjects } from "@/components/uni-projects"
 import Link from "next/link"
 
 

@@ -46,110 +46,15 @@ const projects = [
     links: {
       github: "https://github.com/Laiba-lax/AfterSchool",
     },
-  },
-  // University Projects
-  {
-    title: "Nutritional Management System",
-    description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
-    longDescription:
-      "Built a full-featured library management system with book cataloging, member management, borrowing/returning functionality, and fine calculation. Implemented proper database normalization and CRUD operations.",
-    technologies: ["Python", "MySQL", "Flask", "Javascript"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 4",
-    team: "Solo",
-    highlights: [
-      "Database design and normalization",
-      "SQL query optimization",
-      "Java GUI development with Swing",
-    ],
-    links: {
-      github: "",
-    },
-  },
-  {
-    title: "Expense Tracker",
-    description: "Web-based student management system using PHP and MySQL for Web Development course.",
-    longDescription:
-      "Developed a complete student information system with student registration, course enrollment, grade management, and reporting features. Implemented user authentication and role-based access control.",
-    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 6",
-    team: "Solo",
-    highlights: [
-      "PHP backend development",
-      "Session management and authentication",
-      "Responsive web design with Bootstrap",
-    ],
-    links: {
-      github: "https://github.com/row-huh/Expense-Tracker",
-    },
-  },
-  {
-    title: "Relic",
-    description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
-    longDescription:
-      "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
-    technologies: ["C++", "OOP", "File Handling"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 6",
-    team: "Solo",
-    highlights: [
-      "Advanced OOP concepts in C++",
-      "File handling and data persistence",
-      "Memory management and pointers",
-    ],
-    links: {
-      github: "#",
-    },
-  },
-  {
-    title: "Operating System GUI",
-    description: "Scientific calculator application built with Python Tkinter for Programming Fundamentals course.",
-    longDescription:
-      "Developed a fully functional scientific calculator with basic arithmetic operations, trigonometric functions, logarithms, and memory functions using Python's Tkinter library.",
-    technologies: ["Python", "Tkinter", "Math Library"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 5",
-    team: "Solo",
-    highlights: [
-      "Python GUI development with Tkinter",
-      "Event-driven programming",
-      "Mathematical function implementation",
-    ],
-    links: {
-      github: "#",
-    },
-  },
-  {
-    title: "Time Venturers",
-    description: "Text-Based RPG",
-    longDescription:
-      "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
-    technologies: ["C++", "Algorithms", "Data Structures"],
-    category: "University Project",
-    status: "Completed",
-    timeline: "Semester 1",
-    team: "Solo",
-    highlights: [
-      "Inspired by Cyberpunk Edgerunners theme",
-      "Extensive use of core data structures",
-    ],
-    links: {
-      github: "#",
-    },
-  },
-]
+  }]
+
+  
 
 const categoryColors = {
   "AI/ML": "bg-purple-900/20 text-purple-300 border-purple-700",
   "Healthcare AI": "bg-blue-900/20 text-blue-300 border-blue-700",
   "Full-Stack": "bg-emerald-900/20 text-emerald-300 border-emerald-700",
   Automation: "bg-orange-900/20 text-orange-300 border-orange-700",
-  "University Project": "bg-zinc-700/20 text-zinc-300 border-zinc-600",
 }
 
 export function Projects() {
