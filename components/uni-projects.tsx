@@ -10,33 +10,31 @@ const uniProjects = [
     title: "Nutritional Management System",
     description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
     longDescription:
-      "Built a full-featured library management system with book cataloging, member management, borrowing/returning functionality, and fine calculation. Implemented proper database normalization and CRUD operations.",
+      "Developed a complete nutritional management platform for end users and nutritionists. It includes patient profiling, diet chart generation, nutrition tracking, and admin dashboards.",
     technologies: ["Python", "MySQL", "Flask", "Javascript"],
-    course: "Database Systems",
-    semester: "Semester 4",
-    grade: "A",
     timeSpent: "3 days",
     painLevel: "Extreme", // Low, Medium, High, Extreme
-    actuallyLearned: ["Database design and normalization", "SQL query optimization", "Java GUI development with Swing"],
+    actuallyLearned: [
+      "Database design and normalization",
+      "SQL query optimization",
+      "Flask backend integration",
+    ],
     links: {
-      github: "",
+      github: "https://github.com/row-huh/Nutritional-Management-System",
     },
   },
   {
     title: "Expense Tracker",
-    description: "Web-based student management system using PHP and MySQL for Web Development course.",
+    description: "Web-based expense tracking system using Streamlit for university.",
     longDescription:
-      "Developed a complete student information system with student registration, course enrollment, grade management, and reporting features. Implemented user authentication and role-based access control.",
-    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    course: "Software Construction & Development",
-    semester: "Semester 6",
-    grade: "A-",
+      "Developed an expense tracker that allows users to upload receipts, auto-extract key details using Tesseract OCR, categorize transactions, and visualize their spending with interactive charts. Emphasized simplicity and real-time insights using Streamlit.",
+    technologies: ["Streamlit", "TesseractOCR", "Python", "JavaScript"],
     timeSpent: "1 week",
     painLevel: "Low",
     actuallyLearned: [
-      "PHP backend development",
-      "Session management and authentication",
-      "Responsive web design with Bootstrap",
+      "OCR-based receipt scanning",
+      "Financial visualizations",
+      "Streamlit-based dashboard",
     ],
     links: {
       github: "https://github.com/row-huh/Expense-Tracker",
@@ -44,79 +42,61 @@ const uniProjects = [
   },
   {
     title: "Relic",
-    description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
+    description: "A webapp that lets you search through an historical archive of news artcickes",
     longDescription:
-      "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
-    technologies: ["C++", "OOP", "File Handling"],
-    course: "Web Engineering",
-    semester: "Semester 6",
-    grade: "A+",
+      "used php myssql, javascript to create a webapp that lets you search through an historical archive of news articles. It allows users to search by keywords, view article details, and explore related articles.",
+    technologies: ["PHP", "MySQL", "JavaScript"],
     timeSpent: "4 days",
     painLevel: "Low",
     actuallyLearned: [
+      // rewrite this
       "Advanced OOP concepts in C++",
       "File handling and data persistence",
       "Memory management and pointers",
     ],
     links: {
-      github: "#",
+      github: "https://github.com/row-huh/Relic",
     },
   },
-  {
-    title: "Operating System GUI",
-    description: "Scientific calculator application built with Python Tkinter for Programming Fundamentals course.",
-    longDescription:
-      "Developed a fully functional scientific calculator with basic arithmetic operations, trigonometric functions, logarithms, and memory functions using Python's Tkinter library.",
-    technologies: ["Python", "Tkinter", "Math Library"],
-    course: "Programming Fundamentals",
-    semester: "Semester 5",
-    grade: "A",
-    timeSpent: "1 week",
-    painLevel: "Low",
-    actuallyLearned: [
-      "Python GUI development with Tkinter",
-      "Event-driven programming",
-      "Mathematical function implementation",
-    ],
-    links: {
-      github: "#",
-    },
+{
+  title: "Operating System GUI",
+  description: "A GUI-based interface simulating key operating system functionalities, developed using Python and Tkinter.",
+  longDescription:
+    "A Linux-inspired GUI application that replicates essential OS operations like file management, process/thread creation, inter-process communication, and custom code execution. Features include folder/file creation, permission editing, launching applications, task manager-style process display and control, and data sharing between processes. Also includes a custom code execution module for user-defined Python or C programs.",
+  technologies: ["Python", "Tkinter", "Subprocess", "OS Module"],
+  timeSpent: "1 week",
+  painLevel: "Medium",
+  actuallyLearned: [
+    "Python GUI development with Tkinter",
+    "Working with system-level operations in Python",
+    "Managing processes and threads programmatically",
+    "Basic inter-process communication (IPC)",
+    "Handling file permissions and subprocesses",
+  ],
+  links: {
+    github: "https://github.com/row-huh/operating-system-gui",
   },
+}
+
   {
     title: "Time Venturers",
     description: "Text-Based RPG",
     longDescription:
       "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
     technologies: ["C++", "Algorithms", "Data Structures"],
-    course: "Programming Fundamentals",
-    semester: "Semester 1",
-    grade: "A",
     timeSpent: "1 week",
     painLevel: "None",
-    actuallyLearned: [
-     
-    ],
-    funFact : "I had recently watch cyberpunk edgerunners, thus the theme of this game",
+    actuallyLearned: 
+    // rewrite this
+    [],
+    funFact: "I had recently watched Cyberpunk Edgerunners, thus the theme of this game",
     links: {
-      github: "#",
+      github: "https://github.com/row-huh/time-ventures",
+      demo: "https://www.youtube.com/watch?v=2ck6IDWG4Kc",
     },
   },
-
 ]
 
-const painLevelColors = {
-  Low: "bg-green-900/20 text-green-300 border-green-700",
-  Medium: "bg-yellow-900/20 text-yellow-300 border-yellow-700",
-  High: "bg-orange-900/20 text-orange-300 border-orange-700",
-  Extreme: "bg-red-900/20 text-red-300 border-red-700",
-}
-
-const painLevelIcons = {
-  Low: "😊",
-  Medium: "😐",
-  High: "😰",
-  Extreme: "💀",
-}
 
 export function UniProjects() {
   return (
