@@ -76,25 +76,28 @@ const uniProjects = [
   links: {
     github: "https://github.com/row-huh/operating-system-gui",
   },
+},
+
+{
+  title: "Time Venturers",
+  description: "A futuristic text-based role-playing game built in C++.",
+  longDescription:
+    "Time Venturers is a console-based RPG set in the year 2094. Players must uncover who summoned them to the future and why, while exploring a mysterious cyber-themed world. The game implements core programming concepts like conditional logic, loops, functions, and basic data structures to manage gameplay elements and decision branching.",
+  technologies: ["C++", "OOP", "Console I/O"],
+  timeSpent: "1 week",
+  painLevel: "None",
+  actuallyLearned: [
+    "Foundations of Python syntax and structure",
+    "Working with functions and control flow",
+    "Designing narrative-based branching logic",
+  ],
+  funFact: "I had recently watched Cyberpunk: Edgerunners, which heavily influenced the game’s theme.",
+  links: {
+    github: "https://github.com/row-huh/time-ventures",
+    demo: "https://www.youtube.com/watch?v=2ck6IDWG4Kc",
+  },
 }
 
-  {
-    title: "Time Venturers",
-    description: "Text-Based RPG",
-    longDescription:
-      "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
-    technologies: ["C++", "Algorithms", "Data Structures"],
-    timeSpent: "1 week",
-    painLevel: "None",
-    actuallyLearned: 
-    // rewrite this
-    [],
-    funFact: "I had recently watched Cyberpunk Edgerunners, thus the theme of this game",
-    links: {
-      github: "https://github.com/row-huh/time-ventures",
-      demo: "https://www.youtube.com/watch?v=2ck6IDWG4Kc",
-    },
-  },
 ]
 
 
