@@ -30,24 +30,115 @@ const projects = [
   {
     title: "AfterSchool - Educational RAG",
     description:
-        "Full-stack educational platform powered by AI, focused on teaching essential life skills not usually covered in school—like personal finance, productivity, and more.",
+      "Full-stack educational platform powered by AI, focused on teaching essential life skills not usually covered in school—like personal finance, productivity, and more.",
     longDescription:
-        "Built a full-stack AI-powered educational platform that helps users learn essential but often overlooked topics such as personal finance, critical thinking, and productivity. Integrated modern web technologies and retrieval-augmented generation (RAG) to deliver personalized, conversational learning experiences.",
+      "Built a full-stack AI-powered educational platform that helps users learn essential but often overlooked topics such as personal finance, critical thinking, and productivity. Integrated modern web technologies and retrieval-augmented generation (RAG) to deliver personalized, conversational learning experiences.",
     technologies: ["React", "Node.js", "Flask", "AI/ML", "Vertex AI"],
     category: "Full-Stack",
     status: "Completed",
     timeline: "2024",
     team: "AfterSchool Team",
     highlights: [
-        "AI-driven personalized learning paths",
-        "RAG-based knowledge delivery",
-        "Clean and intuitive user experience",
+      "AI-driven personalized learning paths",
+      "RAG-based knowledge delivery",
+      "Clean and intuitive user experience",
     ],
     links: {
-        github: "https://github.com/Laiba-lax/AfterSchool",
+      github: "https://github.com/Laiba-lax/AfterSchool",
+      demo: "https://devpost.com/software/skinai-ufobl8"
     },
+  },
+
+{
+  title: "Nutritional Management System",
+  description: "A comprehensive Nutritional Management System built with Flask, Javascript and MySQL for Database Systems course.",
+  longDescription:
+    "Developed a complete nutritional management platform for hospitals and clinics. It includes patient profiling, diet chart generation, nutrition tracking, and admin dashboards. Implemented secure authentication, optimized database schemas, and emphasized usability for medical professionals.",
+  technologies: ["Python", "MySQL", "Flask", "Javascript"],
+  status: "Completed",
+  timeline: "2024",
+  highlights: [
+    "Database design and normalization",
+    "SQL query optimization",
+    "Flask backend integration",
+  ],
+  links: {
+    github: "https://github.com/row-huh/Nutritional-Management-System",
+  },
+},
+
+{
+  title: "Expense Tracker",
+  description: "Web-based expense tracking system using Streamlit for university.",
+  longDescription:
+    "Developed an expense tracker that allows users to upload receipts, auto-extract key details using Tesseract OCR, categorize transactions, and visualize their spending with interactive charts. Emphasized simplicity and real-time insights using Streamlit.",
+  technologies: ["Streamlit", "TesseractOCR", "Python", "JavaScript"],
+  status: "Completed",
+  timeline: "Semester 6",
+  team: "Solo",
+  highlights: [
+    "OCR-based receipt scanning",
+    "financial visualizations",
+    "Streamlit-based dashboard"
+  ],
+  links: {
+    github: "https://github.com/row-huh/Expense-Tracker",
+  },
+},
+
+  {
+    title: "Relic",
+    description: "Object-oriented banking system simulation in C++ for Object Oriented Programming course.",
+    longDescription:
+      "Created a comprehensive banking system simulation implementing OOP concepts like inheritance, polymorphism, and encapsulation. Features account management, transactions, and interest calculations.",
+    technologies: ["C++", "OOP", "File Handling"],
+    status: "Completed",
+    timeline: "Semester 6",
+    team: "Solo",
+    highlights: [
+      "Advanced OOP concepts in C++",
+      "File handling and data persistence",
+      "Memory management and pointers",
+    ],
+    links: {
+      github: "#",
     },
- 
+  },
+  {
+    title: "Operating System GUI",
+    description: "Scientific calculator application built with Python Tkinter for Programming Fundamentals course.",
+    longDescription:
+      "Developed a fully functional scientific calculator with basic arithmetic operations, trigonometric functions, logarithms, and memory functions using Python's Tkinter library.",
+    technologies: ["Python", "Tkinter", "Math Library"],
+    status: "Completed",
+    timeline: "Semester 5",
+    team: "Solo",
+    highlights: [
+      "Python GUI development with Tkinter",
+      "Event-driven programming",
+      "Mathematical function implementation",
+    ],
+    links: {
+      github: "#",
+    },
+  },
+  {
+    title: "Time Venturers",
+    description: "Text-Based RPG",
+    longDescription:
+      "Implemented fundamental data structures including linked lists, stacks, queues, binary trees, and hash tables. Also implemented sorting and searching algorithms with performance analysis.",
+    technologies: ["C++", "Algorithms", "Data Structures"],
+    status: "Completed",
+    timeline: "Semester 1",
+    team: "Solo",
+    highlights: [
+      "Inspired by Cyberpunk Edgerunners theme",
+      "Extensive use of core data structures",
+    ],
+    links: {
+      github: "#",
+    },
+  },
 ]
 
 const categoryColors = {
@@ -76,9 +167,11 @@ export function Projects() {
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className={categoryColors[project.category as keyof typeof categoryColors]}>
-                {project.category}
-              </Badge>
+              {project.category && categoryColors[project.category as keyof typeof categoryColors] && (
+                <Badge className={categoryColors[project.category as keyof typeof categoryColors]}>
+                  {project.category}
+                </Badge>
+              )}
               <Badge variant="outline" className="border-zinc-600 text-zinc-300">
                 {project.status}
               </Badge>
