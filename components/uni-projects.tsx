@@ -49,10 +49,11 @@ const uniProjects = [
     timeSpent: "4 days",
     painLevel: "Low",
     actuallyLearned: [
-      // rewrite this
-      "Advanced OOP concepts in C++",
-      "File handling and data persistence",
-      "Memory management and pointers",
+      "Working with PHP for server-side scripting",
+      "Designing and querying MySQL databases",
+      "Creating dynamic web pages using JavaScript and DOM manipulation",
+      "Building search functionality with SQL and input sanitization",
+      "Structuring backend logic to handle user input and database interaction",
     ],
     links: {
       github: "https://github.com/row-huh/Relic",
