@@ -131,7 +131,7 @@ export function getBlogPost(slug: string): BlogPost | null {
   }
 }
 
-export async function getBlogPostsByCategory(category: string): BlogPost[] {
+export function getBlogPostsByCategory(category: string): BlogPost[] {
   const allPosts = getAllBlogPosts()
   return allPosts.filter((post) => post.category === category)
 }
