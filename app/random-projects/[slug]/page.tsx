@@ -9,16 +9,50 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 
 const projectData = {
+  // pethia
   "pethia": {
     title: "Discord Bot That Roasts All Of Your Friends (And You) - Private on github coz it knows too much about me",
     date: "2023-08-15",
     readTime: "3 min read",
     status: "completed",
-    reason: "Too mean, hurt my own feelings",
+    reason: "Too satirical",
     tags: ["Discord.py", "Python", "Regret"],
     githubUrl: "https://github.com/row-huh/pethia",
-    content: ``,
+    content: `
+# Content
+Coming Soon!    `,
   },
+
+  // Bool
+  "bool" : {
+    title: "Bool - A small rule-based bot (pre-gpt btw)",
+    date: "2022-08-20",
+    readTime: "2 min read",
+    status: "completed",
+    reason: "Too Simple!",
+    tags: ["Discord.py", "Python"],
+    githubUrl: "https://github.com/row-huh/bool",
+    content: `
+# Content
+Coming Soon!    `,
+  }, 
+
+
+  // accesible-ui
+  "accesible-ui" : {
+    title: "Accessible UI - A project to make web UIs more accessible",
+    date: "2023-05-10",
+    readTime: "4 min read",
+    status: "abandoned",
+    reason: "Spent more time on the design than the code",    
+    tags: ["Web Development", "Accessibility", "UI/UX"],
+    githubUrl: "https://github.com/row-huh/accesible-ui",
+    content: `
+# Content
+Coming Soon!    `,
+  }
+
+
 
 }
 
