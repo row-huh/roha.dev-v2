@@ -53,7 +53,7 @@ export default function RandomProjectsPage() {
           </h1>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
             The projects that didn't make it to my resume. Some are too satirical, others incomplete, and a few I'm just
-            not proud of. But hey, we all have our coding dark ages.
+            not proud of. (A work under process)
           </p>
         </div>
 

@@ -4,9 +4,12 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Calendar, Clock, Github } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, Github, Tags } from "lucide-react"
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { ta } from "date-fns/locale"
+import { Content } from "vaul"
+import { useParams, notFound } from "next/navigation"
+
 
 const projectData = {
   // pethia
@@ -50,7 +53,34 @@ Coming Soon!    `,
     content: `
 # Content
 Coming Soon!    `,
-  }
+  },
+
+  // ad-blaster
+  "ad-blaster": {
+    title: "Ad Blaster - A game where you shoot down ads except those ads are real ads and you make me rich",
+    date: "2023-06-01",
+    readTime: "5 min read",
+    status: "incomplete",
+    reason: "Couldn't figure out how to embed real ads so that they won't redirect to the advertiser's site but still make me money",
+    tags: ["Typescript", "Nextjs"],
+    githubUrl: "https://github.com/row-huh/ad-blaster",
+    content: `
+# Content
+Coming Soon!    `,
+  },
+
+  // automation scripts
+  "automation-scripts": {
+    title: "Automation Scripts - Some random automation scripts I don't remember writing",
+    date: "2023-07-15",
+    readTime: "3 min read",
+    status: "shameful",
+    reason: "I don't remember writing these scripts and they are not *AT ALL* useful",
+    tags: ["Python", "Automation"],
+    githubUrl: "https://github.com/row-huh/PythonAutomationScripts",
+    content: `# Content
+Coming Soon!    `,
+  },
 
 
 
@@ -63,10 +93,15 @@ const statusConfig = {
   shameful: { color: "bg-purple-900/30 text-purple-300 border-purple-700", label: "Shameful" },
   "too-effective": { color: "bg-orange-900/30 text-orange-300 border-orange-700", label: "Too Effective" },
   toxic: { color: "bg-pink-900/30 text-pink-300 border-pink-700", label: "Toxic" },
+  completed: { color: "bg-green-900/30 text-green-300 border-green-700", label: "Completed" },
+
 }
 
-export default function RandomProjectPage({ params }: { params: { slug: string } }) {
-  const project = projectData[params.slug as keyof typeof projectData]
+export default function RandomProjectPage() {
+  const params = useParams()
+  const slug = params?.slug as string
+  const project = projectData[slug as keyof typeof projectData]
+
 
   if (!project) {
     notFound()

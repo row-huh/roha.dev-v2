@@ -6,20 +6,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/random-projects/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/random-projects/[slug]/page.js"
     ],
     "/random-projects/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/random-projects/page.js"
     ],
-    "/random-projects/[slug]/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/random-projects/[slug]/page.js"
+      "static/chunks/app/page.js"
     ]
   }
 }
