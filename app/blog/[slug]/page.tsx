@@ -1,5 +1,7 @@
-import { getAllBlogPosts } from "@/lib/blog"
+// app/blog/[slug]/page.tsx
+import { getAllBlogPosts, getBlogPost, categoryConfig } from "@/lib/blog"
 import BlogPostClientPage from "./BlogPostClientPage"
+import { notFound } from "next/navigation"
 
 export async function generateStaticParams() {
   const posts = getAllBlogPosts()
@@ -8,6 +10,12 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  return <BlogPostClientPage params={params} />
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+  const post = getBlogPost(params.slug)
+
+  if (!post) {
+    notFound()
+  }
+
+  return <BlogPostClientPage post={post} />
 }

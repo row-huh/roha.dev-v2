@@ -1,6 +1,5 @@
 "use client"
 
-import { notFound } from "next/navigation"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Badge } from "@/components/ui/badge"
@@ -8,24 +7,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Calendar, Clock, ArrowLeft, ExternalLink } from "lucide-react"
 import Link from "next/link"
-import { getBlogPost, categoryConfig } from "@/lib/blog"
+import { categoryConfig } from "@/lib/categoryconfig"
 import ReactMarkdown from "react-markdown"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
-interface BlogPostPageProps {
-  params: {
-    slug: string
-  }
+interface BlogPost {
+  slug: string
+  title: string
+  content: string
+  category: string
+  tags: string[]
+  date: string
+  readTime: string
+  mediumUrl?: string
 }
 
-export default function BlogPostClientPage({ params }: BlogPostPageProps) {
-  const post = getBlogPost(params.slug)
-
-  if (!post) {
-    notFound()
-  }
-
+export default function BlogPostClientPage({ post }: { post: BlogPost }) {
   const categoryInfo = categoryConfig[post.category as keyof typeof categoryConfig]
 
   return (
