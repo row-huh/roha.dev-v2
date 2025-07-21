@@ -1,5 +1,6 @@
 // app/blog/ServerBlogWrapper.tsx
-import { getAllBlogPosts, categoryConfig } from "@/lib/blog"
+import { getAllBlogPosts } from "@/lib/blog"
+import { categoryConfig } from "@/lib/categoryconfig"
 import BlogClient from "./BlogClient"
 
 export default function ServerBlogWrapper() {
