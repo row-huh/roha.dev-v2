@@ -106,10 +106,8 @@ export default function ContactPage() {
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">Quick Info</h3>
               <ul className="space-y-2 text-sm text-zinc-300">
-                <li>🎓 Final-year Software Engineering student</li>
-                <li>🧠 Building cool stuff — mostly backend & data pipelines</li>
-                <li>💼 Open to teaming up on serious problems (or fun ones with graphs)</li>
-                <li>📬 Replies fast — unless debugging something cursed</li>
+                <li>Building cool stuff</li>
+                <li>Replies under 24 hours (maybe, hopefully, probably)</li>
 
               </ul>
             </div>
