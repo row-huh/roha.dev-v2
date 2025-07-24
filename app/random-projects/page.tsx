@@ -19,7 +19,57 @@ const randomProjects = [
     tags: ["Discord.py", "Python", "Regret"],
     readTime: "3 min read",
   },
-]
+  {
+    id: 2,
+    title: "Bool",
+    slug: "bool",
+    description:
+      "A small rule-based Discord bot (pre-GPT era) that handled basic automation.",
+    date: "2022-08-20",
+    status: "completed",
+    reason: "Too simple!",
+    tags: ["Discord.py", "Python"],
+    readTime: "2 min read",
+  },
+  {
+    id: 3,
+    title: "Accessible UI",
+    slug: "accesible-ui",
+    description:
+      "An attempt to make web UIs more accessible. Spent more time on design than actual code.",
+    date: "2023-05-10",
+    status: "abandoned",
+    reason: "Spent more time on the design than the code",
+    tags: ["Web Development", "Accessibility", "UI/UX"],
+    readTime: "4 min read",
+  },
+  {
+    id: 4,
+    title: "Ad Blaster",
+    slug: "ad-blaster",
+    description:
+      "A game where you shoot down ads—except they were supposed to be real ads that made me money.",
+    date: "2023-06-01",
+    status: "incomplete",
+    reason:
+      "Couldn't figure out how to embed real ads without redirects but still make money",
+    tags: ["Typescript", "Nextjs"],
+    readTime: "5 min read",
+  },
+  {
+    id: 5,
+    title: "Automation Scripts",
+    slug: "automation-scripts",
+    description:
+      "A bunch of random automation scripts I don’t even remember writing. Not useful at all.",
+    date: "2023-07-15",
+    status: "shameful",
+    reason:
+      "I don't remember writing these scripts and they are not *AT ALL* useful",
+    tags: ["Python", "Automation"],
+    readTime: "3 min read",
+  },
+];
 
 const statusConfig = {
   abandoned: { color: "bg-red-900/30 text-red-300 border-red-700", label: "Abandoned" },
