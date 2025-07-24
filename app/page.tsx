@@ -24,9 +24,7 @@ export default function Home() {
             </h1>
             <p className="text-xl md:text-2xl text-zinc-400 mb-8">Organic Software Engineer</p>
             <p className="text-lg text-zinc-500 max-w-2xl mx-auto">
-            I can code, I solve problems, I got a habit of coding, I always learn new tech. 
-            70% of my time is watching tech videos, playing around with new tech, crying if I can't figure something out, then laughing like a maniac when I do figure it out.
-            Hire me before I get too good at this, get into Y Combinator, and become a billionaire.
+            There’s no single box you can put me in. Call me a jack of all trades. <br />Backend? Got it. AI/ML? Got it. Data? Give me three days and I’ll figure it out. 
             </p>
           </div>
 

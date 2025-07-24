@@ -19,16 +19,89 @@ const randomProjects = [
     tags: ["Discord.py", "Python", "Regret"],
     readTime: "3 min read",
   },
-]
+  {
+    id: 2,
+    title: "Bool",
+    slug: "bool",
+    description:
+      "A small rule-based Discord bot (pre-GPT era) that handled basic automation.",
+    date: "2022-08-20",
+    status: "completed",
+    reason: "Too simple!",
+    tags: ["Discord.py", "Python"],
+    readTime: "2 min read",
+  },
+  {
+    id: 3,
+    title: "Accessible UI",
+    slug: "accesible-ui",
+    description:
+      "An attempt to make web UIs more accessible. Spent more time on design than actual code.",
+    date: "2023-05-10",
+    status: "abandoned",
+    reason: "Spent more time on the design than the code",
+    tags: ["Web Development", "Accessibility", "UI/UX"],
+    readTime: "4 min read",
+  },
+  {
+    id: 4,
+    title: "Ad Blaster",
+    slug: "ad-blaster",
+    description:
+      "A game where you shoot down ads—except they were supposed to be real ads that made me money.",
+    date: "2023-06-01",
+    status: "incomplete",
+    reason:
+      "Couldn't figure out how to embed real ads without redirects but still make money",
+    tags: ["Typescript", "Nextjs"],
+    readTime: "5 min read",
+  },
+  {
+    id: 5,
+    title: "Automation Scripts",
+    slug: "automation-scripts",
+    description:
+      "A bunch of random automation scripts I don’t even remember writing. Not useful at all.",
+    date: "2023-07-15",
+    status: "shameful",
+    reason:
+      "I don't remember writing these scripts and they are not *AT ALL* useful",
+    tags: ["Python", "Automation"],
+    readTime: "3 min read",
+  },
+];
 
 const statusConfig = {
-  abandoned: { color: "bg-red-900/30 text-red-300 border-red-700", label: "Abandoned" },
-  satirical: { color: "bg-yellow-900/30 text-yellow-300 border-yellow-700", label: "Too Satirical" },
-  incomplete: { color: "bg-blue-900/30 text-blue-300 border-blue-700", label: "Incomplete" },
-  shameful: { color: "bg-purple-900/30 text-purple-300 border-purple-700", label: "Shameful" },
-  "too-effective": { color: "bg-orange-900/30 text-orange-300 border-orange-700", label: "Too Effective" },
-  toxic: { color: "bg-pink-900/30 text-pink-300 border-pink-700", label: "Toxic" },
-}
+  abandoned: {
+    color: "bg-red-900/30 text-red-300 border-red-700",
+    label: "Abandoned",
+  },
+  satirical: {
+    color: "bg-yellow-900/30 text-yellow-300 border-yellow-700",
+    label: "Too Satirical",
+  },
+  incomplete: {
+    color: "bg-blue-900/30 text-blue-300 border-blue-700",
+    label: "Incomplete",
+  },
+  shameful: {
+    color: "bg-purple-900/30 text-purple-300 border-purple-700",
+    label: "Shameful",
+  },
+  "too-effective": {
+    color: "bg-orange-900/30 text-orange-300 border-orange-700",
+    label: "Too Effective",
+  },
+  toxic: {
+    color: "bg-pink-900/30 text-pink-300 border-pink-700",
+    label: "Toxic",
+  },
+  completed: {
+    color: "bg-green-900/30 text-green-300 border-green-700",
+    label: "Completed",
+  },
+};
+
 
 export default function RandomProjectsPage() {
   return (
