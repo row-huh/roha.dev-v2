@@ -15,12 +15,8 @@ export function Terminal() {
     { command: "pwd", output: "/home/roha/portfolio" },
     { command: "ls -la skills/", output: "Python Java C Flask Django SQL AI/ML" },
     {
-      command: "grep -r 'achievements' .",
-      output: "updating this soon",
-    },
-    {
       command: "curl -s api.github.com/users/row-huh",
-      output: '{"login": "row-huh", "projects": "Neutral, Ampu-Fitness, MalamaAI"}',
+      output: '{"login": "row-huh", "projects": "Neutral, MalamaAI"}',
     },
     { command: "echo $STATUS", output: "Building an LLM from scratch 🚀" },
     { command : "", output: "Available commands:\nwhoami\npwd\nskills\ngithub\nprojects\nsecret\nhelp\nclear" }
