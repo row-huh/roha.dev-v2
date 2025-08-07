@@ -20,7 +20,7 @@ export function Terminal() {
     },
     {
       command: "curl -s api.github.com/users/row-huh",
-      output: '{"login": "row-huh", "projects": "Neutral, Ampu-Fitness, MalamaAI"}',
+      output: '{"login": "row-huh", "projects": ""}',
     },
     { command: "echo $STATUS", output: "Building an LLM from scratch 🚀" },
     { command : "", output: "Available commands:\nwhoami\npwd\nskills\ngithub\nprojects\nsecret\nhelp\nclear" }
